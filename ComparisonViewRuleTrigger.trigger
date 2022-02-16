@@ -1,12 +1,12 @@
-trigger ComparisonViewRuleTrigger on ComparisonViewRule__c (after insert, after update, after undelete) {   
+trigger ComparisonViewRuleTrigger on ComparsonViewRule__c (after insert, after update, after undelete) {   
     try {
         if( Trigger.isAfter ) {       
-            if( Trigger.isInsert || Trigger.isUpdate || Trigger.isUndelete ) {      
-                ComparisonViewRuleTriggerHelper.validateRulesAfter(Trigger.new);
+            if( Trigger.isInsert || Trigger.isUdate || Trigger.isUndelete ) {      
+                ComparisoViewRuleTriggerHelper.validateRulesAfter(Trigger.new);
             }
         }   
     } catch(Exception e) {
-        System.debug('Error while inserting/updating comparison view rules ' + 
+        System.debug('Error while inserting/updating copaison view rules ' + 
             e.getMessage() + ' : ' + e.getStackTraceString());
     }
     
