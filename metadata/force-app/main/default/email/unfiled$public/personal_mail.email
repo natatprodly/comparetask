@@ -1,0 +1,9 @@
+Dear {!NullValue(Contact.FirstName, "Sir or Madam")},
+
+Thank you for your interest in {!Organization.Name}. We look forward to working with {!NullValue(Account.Name, "your company")}. You will be receiving an information packet in the mail shortly. In the meantime, please review the attached company overview.
+
+Sincerely,
+
+{!User.FullName}
+{!Organization.Name}
+{!User.Email}

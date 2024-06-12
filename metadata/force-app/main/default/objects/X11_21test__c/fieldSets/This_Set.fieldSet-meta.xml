@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>This_Set</fullName>
+    <description>THIS IS TEST FIELD SET PLEASE DO NOT INCLUDE THIS IN BUILD</description>
+    <label>This Set</label>
+</FieldSet>
